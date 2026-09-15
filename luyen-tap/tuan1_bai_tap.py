@@ -31,7 +31,9 @@ print(f"chuvi:{chuvi}")
 
 # (viet code Bai 2 o day)
 
-
+C = 8
+F= C*9/5 +32
+print(f"do c la :{C} do F la {F}")
 # --------------------------------------------------
 # BAI 3: Kiem tra so chan hay le
 #   - Gan bien so (vi du so = 7).
@@ -41,8 +43,12 @@ print(f"chuvi:{chuvi}")
 # --------------------------------------------------
 
 # (viet code Bai 3 o day)
+a = float(input( " nhập a:"))
 
-
+if a%2==0:
+    print(" a là số chẵn")
+else:
+    print ( " a là số lẻ ")
 # --------------------------------------------------
 # BAI 4: Diem trung binh & xep loai
 #   - Cho diem 3 mon: toan, van, anh (tu gan bien).
@@ -57,7 +63,18 @@ print(f"chuvi:{chuvi}")
 # --------------------------------------------------
 
 # (viet code Bai 4 o day)
-
+Toan = float(input("nhập điểm toán:" ))
+Van = float(intput("nhập điểm văn :"))
+Anh = float(input("nhập điểm anh :"))
+DTB = ( Toan + Van + Anh)/ 3
+if DTB >=8:
+    print (" Giỏi")
+elif DTB >=6.5 :
+    print (" Khá")
+elif DTB >=5:
+    print ("Trung Bình")
+else :
+    print (" yếu ")
 
 # --------------------------------------------------
 # BAI 5: Tinh tien dien bac thang
@@ -67,5 +84,11 @@ print(f"chuvi:{chuvi}")
 #   - In ra so tien phai tra.
 #   - Vi du 150 kWh -> 100*2000 + 50*3000 = 350000 VND
 # --------------------------------------------------
-
 # (viet code Bai 5 o day)
+KLW = int(input(" Nhập số klw:"))
+if KLW<=100:
+    tiendien = KLW*2000
+    print("Tiền điện tháng này :",{tiendien})
+else :
+    tiendien = (KLW-100)*3000 +100*2000
+print ( " tiền điện tháng này :",{tiendien})
