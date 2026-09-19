@@ -64,7 +64,7 @@ else:
 
 # (viet code Bai 4 o day)
 Toan = float(input("nhập điểm toán:" ))
-Van = float(intput("nhập điểm văn :"))
+Van = float(input("nhập điểm văn :"))
 Anh = float(input("nhập điểm anh :"))
 DTB = ( Toan + Van + Anh)/ 3
 if DTB >=8:
@@ -88,7 +88,34 @@ else :
 KLW = int(input(" Nhập số klw:"))
 if KLW<=100:
     tiendien = KLW*2000
-    print("Tiền điện tháng này :",{tiendien})
+    print("Tiền điện tháng này :",tiendien)
 else :
     tiendien = (KLW-100)*3000 +100*2000
-print ( " tiền điện tháng này :",{tiendien})
+print ( " tiền điện tháng này :",tiendien)
+
+# --------------------------------------------------
+# BAI 6: Tinh chi so BMI & phan loai
+#   - Nhap can nang (kg) va chieu cao (met) tu ban phim (dung input + float).
+#   - Cong thuc: BMI = can_nang / (chieu_cao * chieu_cao)
+#   - In ra BMI (lam tron 1 chu so thap phan cung duoc) va phan loai:
+#       BMI < 18.5           -> "Thieu can"
+#       18.5 <= BMI < 25.0   -> "Binh thuong"
+#       25.0 <= BMI < 30.0   -> "Thua can"
+#       BMI >= 30.0          -> "Beo phi"
+#   - Goi y: dung if / elif / else giong Bai 4.
+#   - Vi du: nang=60 kg, cao=1.70 m  ->  BMI = 20.8  ->  Binh thuong
+# --------------------------------------------------
+
+# (viet code Bai 6 o day)
+Chieu_cao= float(input("nhập chiều cao"))
+Can_nang = float(input("Nhập cân nặng:"))
+BMI = Can_nang/(Chieu_cao*Chieu_cao)
+print(f" BMI là : {BMI}")
+if BMI<18.5:
+    print("gầy")
+elif BMI >= 18.5 and BMI<25 :
+    print(" bình thường")
+elif BMI>=25.0 and BMI<30:
+    print (" thừa cân")
+else :
+    print ( " béo phì")
