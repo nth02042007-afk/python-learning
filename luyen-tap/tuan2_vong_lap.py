@@ -61,11 +61,13 @@ for i in range (1,11):
 # --------------------------------------------------
 
 # (viet code Bai 4 o day)
+dem =0
 n = int(input("Nhập N:"))
 for i in range(1,n+1):
   if i %2==0:
-    print(i)
-    
+    dem = dem+1
+print(f"{dem}")
+
 
 # --------------------------------------------------
 # BAI 5: Doan so (dung while)
@@ -77,6 +79,13 @@ for i in range(1,n+1):
 # --------------------------------------------------
 
 # (viet code Bai 5 o day)
+n = 7
+dap_an = int(input(" Nhập đáp  "))
+while n!= dap_an :
+  print ( " nhập lại :")
+  dap_an = int(input(" nhập đáp án bí mật :"))
+print(" đáp án chính xác :")    
+  
 
 
 # --------------------------------------------------
