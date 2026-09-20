@@ -21,7 +21,9 @@
 # --------------------------------------------------
 
 # (viet code Bai 1 o day)
-
+def chao(ten):
+    print(f"xin chao,{ten}")
+chao(Hải)
 
 # --------------------------------------------------
 # BAI 2: Ham tinh tong 2 so (dung return)
