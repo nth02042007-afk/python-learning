@@ -43,4 +43,44 @@
 
 ---
 
+## 🗓️ Ngày 20/09/2026 — Tuần 2: Vòng lặp (for / while)
+
+### ✅ Đã học được
+- **`for` + `range()`:** lặp số lần biết trước.
+  ```python
+  for i in range(1, 11):   # i = 1,2,...,10
+      print(i)
+  ```
+  - ⭐ Quy tắc vàng: muốn chạy tới **N** thì viết `range(1, N + 1)` (số cuối KHÔNG lấy).
+- **Cộng dồn:** `tong = 0` trước vòng lặp → `tong = tong + i` trong vòng lặp → in **ngoài** vòng lặp.
+- **Đếm có điều kiện:** `for` + `if` + biến đếm `dem = dem + 1` (chỉ +1 khi thỏa điều kiện).
+- **`while`:** lặp đến khi điều kiện sai. Nhớ đọc input mới **BÊN TRONG** vòng lặp.
+  ```python
+  dap_an = 7
+  doan = int(input("Đoán: "))
+  while doan != dap_an:
+      print("Sai rồi")
+      doan = int(input("Đoán: "))   # phải thụt lề trong while!
+  print("Chính xác!")
+  ```
+- **Nhân dồn (giai thừa):** `gt = 1` (KHÔNG phải 0) → `gt = gt * i`.
+
+### 🐛 Lỗi mình hay mắc (NHỚ KỸ!)
+| Lỗi | Sai | Đúng |
+|---|---|---|
+| Quên +1 ở range | `range(1, N)` (thiếu số cuối) | `range(1, N + 1)` |
+| Cộng/nhân dồn khởi tạo sai | nhân dồn để `= 0` → luôn ra 0 | nhân dồn `= 1`, cộng dồn `= 0` |
+| Gán đè thay vì đếm | `dem = i + 1` | `dem = dem + 1` |
+| `print` trong vòng lặp | in trùng nhiều lần | kéo ra ngoài, in 1 lần |
+| **while lặp vô tận** | đọc input NGOÀI while → treo máy | thụt lề lệnh đọc input VÀO TRONG while |
+| f-string | `(dem)` in ra chữ | `{dem}` mới in giá trị |
+
+### 📝 Bài đã làm
+- File: `luyen-tap/tuan2_vong_lap.py` — 6 bài: in 1→10, tính tổng, bảng cửu chương, đếm số chẵn, đoán số (while), giai thừa. Tất cả chạy đúng ✅.
+
+### ➡️ Học tiếp theo
+- Tuần 3: **Hàm (`def`)** và **danh sách (`list`)**.
+
+---
+
 <!-- Ngày học mới thêm mục ## ở bên dưới -->

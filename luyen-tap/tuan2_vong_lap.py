@@ -98,3 +98,8 @@ print(" đáp án chính xác :")
 # --------------------------------------------------
 
 # (viet code Bai 6 o day)
+n = int(input("nhập N:"))
+tong =1
+for i in range (1,n+1):
+  tong =tong *i 
+print(tong)
