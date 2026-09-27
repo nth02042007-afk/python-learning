@@ -22,7 +22,7 @@
 
 # (viet code Bai 1 o day)
 def chao(ten):
-    print(f"xin chao,{ten}")
+    print(f"xin chao, {ten}!")
 chao("Hải")
 
 # --------------------------------------------------
@@ -73,9 +73,9 @@ print(kiem_tra(n))
 
 # (viet code Bai 4 o day)
 diem= [8,6,9,7,10]
-print("số lượng phân tử ",len(diem))
-print(" Phân tử đầu tiên ",diem[0])
-print(" Phân tử cuối cùng ",diem[-1])
+print("số lượng phần tử ",len(diem))
+print(" Phần tử đầu tiên ",diem[0])
+print(" Phần tử cuối cùng ",diem[-1])
 for d in diem:
 
     print(d)
@@ -89,12 +89,12 @@ for d in diem:
 # --------------------------------------------------
 
 # (viet code Bai 5 o day)
-tong=0
+tong_diem=0
 diem= [8,6,9,7,10]
 for i in diem:
-    tong = tong +i
-dtb = tong/len(diem)
-print ("tổng điểm ",tong)
+    tong_diem = tong_diem +i
+dtb = tong_diem/len(diem)
+print ("tổng điểm ",tong_diem)
 print (" điểm trung bình:",dtb)
 # --------------------------------------------------
 # BAI 6: Nhap N so vao list roi tim so lon nhat
