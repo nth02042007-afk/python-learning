@@ -23,7 +23,7 @@
 # (viet code Bai 1 o day)
 def chao(ten):
     print(f"xin chao,{ten}")
-chao(Hải)
+chao("Hải")
 
 # --------------------------------------------------
 # BAI 2: Ham tinh tong 2 so (dung return)
@@ -39,7 +39,10 @@ chao(Hải)
 
 # (viet code Bai 2 o day)
 
-
+def tong(a,b):
+    return a+b
+kq = tong(5,4)
+print ( kq)
 # --------------------------------------------------
 # BAI 3: Ham kiem tra so chan/le
 #   - Viet ham kiem_tra(so) tra ve chuoi "CHAN" hoac "LE".
@@ -49,8 +52,13 @@ chao(Hải)
 # --------------------------------------------------
 
 # (viet code Bai 3 o day)
-
-
+n = int( input (" nhập n"))
+def kiemtraso ( n):
+    if n % 2==0:
+          return "chẵn"
+    else :
+        return " lẻ :"
+print ( kiemtraso (n))
 # --------------------------------------------------
 # BAI 4: Lam quen danh sach (list)
 #   - Tao list diem = [8, 6, 9, 7, 10]
@@ -62,8 +70,12 @@ chao(Hải)
 # --------------------------------------------------
 
 # (viet code Bai 4 o day)
-
-
+diem= [8,6,9,7,10]
+print("số lượng phân tử ",len(diem))
+print(" Phân tử đầu tiên ",len[0])
+print(" Phân tử cuối cùng ",diem[-1])
+for d in diem:
+    print(d)
 # --------------------------------------------------
 # BAI 5: Tinh diem trung binh tu list
 #   - Cho list diem = [8, 6, 9, 7, 10]
@@ -74,8 +86,13 @@ chao(Hải)
 # --------------------------------------------------
 
 # (viet code Bai 5 o day)
-
-
+tong=0
+diem= [8,6,9,7,10]
+for i in diem:
+    tong = tong +i
+dtb = tong/len(diem)
+print ("tổng điểm ",tong)
+print (" điểm trung bình:",dtb)
 # --------------------------------------------------
 # BAI 6: Nhap N so vao list roi tim so lon nhat
 #   - Nhap so luong N.
@@ -88,3 +105,16 @@ chao(Hải)
 # --------------------------------------------------
 
 # (viet code Bai 6 o day)
+n= int(input("Nhập số lượng phần tử N:"))
+ds=[]
+for i in range(n):
+    x = int(input("nhập số thứ"+str(i+1)+":"))
+    ds.append(x)
+solonnhat = ds[0]
+for x in ds:
+    if x > solonnhat:
+        solonnhat = x
+print (" danh sách :",ds)
+print(" số lớn nhất ", solonnhat)        
+
+            
