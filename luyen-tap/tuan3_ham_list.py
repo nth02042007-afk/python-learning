@@ -52,13 +52,15 @@ print ( kq)
 # --------------------------------------------------
 
 # (viet code Bai 3 o day)
-n = int( input (" nhập n"))
-def kiemtraso ( n):
-    if n % 2==0:
-          return "chẵn"
-    else :
-        return " lẻ :"
-print ( kiemtraso (n))
+n = int(input("Nhập n: "))
+
+def kiem_tra(so):
+    if so % 2 == 0:
+        return "CHAN"
+    else:
+        return "LE"
+
+print(kiem_tra(n))
 # --------------------------------------------------
 # BAI 4: Lam quen danh sach (list)
 #   - Tao list diem = [8, 6, 9, 7, 10]
@@ -106,16 +108,25 @@ print (" điểm trung bình:",dtb)
 # --------------------------------------------------
 
 # (viet code Bai 6 o day)
-n= int(input("Nhập số lượng phần tử N:"))
-ds=[]
-for i in range(n):
-    x = int(input("nhập số thứ"+str(i+1)+":"))
-    ds.append(x)
-solonnhat = ds[0]
-for x in ds:
-    if x > solonnhat:
-        solonnhat = x
-print (" danh sách :",ds)
-print(" số lớn nhất ", solonnhat)        
 
+
+n = int(input("Nhap so luong N: "))
+
+if n <= 0:
+    print("N phai lon hon 0!")
+else:
+    ds = []
+
+    for i in range(n):
+        x = int(input("Nhap so thu " + str(i + 1) + ": "))
+        ds.append(x)
+
+    solonnhat = ds[0]
+
+    for x in ds:
+        if x > solonnhat:
+            solonnhat = x
+
+    print("Danh sach:", ds)
+    print("So lon nhat:", solonnhat)
             
