@@ -72,9 +72,10 @@ print ( kiemtraso (n))
 # (viet code Bai 4 o day)
 diem= [8,6,9,7,10]
 print("số lượng phân tử ",len(diem))
-print(" Phân tử đầu tiên ",len[0])
+print(" Phân tử đầu tiên ",diem[0])
 print(" Phân tử cuối cùng ",diem[-1])
 for d in diem:
+
     print(d)
 # --------------------------------------------------
 # BAI 5: Tinh diem trung binh tu list
